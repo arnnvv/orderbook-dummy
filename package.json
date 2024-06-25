@@ -1,0 +1,18 @@
+{
+  "name": "orderbook",
+  "scripts": {
+    "dev": "wrangler dev src/btc-usd.ts",
+    "deploy": "wrangler deploy --minify src/btc-usd.ts"
+  },
+  "dependencies": {
+    "@hono/zod-validator": "^0.2.2",
+    "hono": "^4.4.8",
+    "redis": "^4.6.14",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240529.0",
+    "@types/redis": "^4.0.11",
+    "wrangler": "^3.57.2"
+  }
+}
